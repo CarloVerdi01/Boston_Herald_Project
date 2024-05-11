@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:font-family="http://www.w3.org/1999/xhtml">
+<header>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link  rel="stylesheet" type = "text/css" href = "css/bootstrap.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <meta charset="utf-8">
+  <title>Boston Herald</title>
+
+  <style>
+
+    .btn:hover {
+      color: royalblue;
+    }
+
+
+    .classe-con-striscia {
+      margin-top: 169px;
+    }
+
+    .classe-con-striscia-bianca {
+      margin-top: 300px;
+    }
+
+    @media (max-width: 991.98px) {
+      .classe-con-striscia-bianca {
+        margin-top: 150px !important;
+      }
+    }
+
+    .classe-con-striscia-bianca-larga {
+      margin-top: 800px;
+    }
+
+
+    .blue-circle {
+      width: 30px;
+      height: 30px;
+      background-color: royalblue;
+      color: white;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1px;
+    }
+
+    .container-circle {
+      width: 30px;
+      height: 30px;
+    }
+
+    h7 {
+      font-size: 1.2em;
+      line-height: normal;
+    }
+
+    @media (max-width: 767.98px) {
+      h7 {
+        font-size: 1.0em;
+        line-height: normal;
+
+      }
+    }
+
+    .custom-btn {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .custom-btn:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+    }
+
+
+
+    .custom-btnn {
+      text-decoration: none;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .custom-btns {
+      color: gray;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+
+    .sticky-column {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1;
+    }
+
+    .sticky-bottom-border {
+      border-bottom: 1px solid lightgray;
+    }
+
+    .custom-buttone {
+      color: black;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    btn.custom-buttone:hover {
+      color: black;
+    }
+
+    .offcanvas-header {
+      width: 100%;
+      height: 80px;
+      background-color:white;
+    }
+
+    .btn.fixed-right {
+      right: 10px; /* Spazio dal bordo destro dello schermo */
+      bottom: 100px;
+    }
+
+
+
+
+
+  </style>
+
+</header>
+
+
+
+<body  style="font-family: Helvetica">
+
+<div class="offcanvas offcanvas-start " id="demo" >
+  <div class="offcanvas-header  ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-3">
+        </div>
+        <div class="col-xl-6 text-center border-0">
+          <button type="button" class="btn-close text-reset fw-semibold text-center text-black pt-2 border-0" data-bs-dismiss="offcanvas"> </button>
+          <button type="button" class="btn text-reset fw-semibold text-center text-black ms-0 border-0" data-bs-dismiss="offcanvas">All Section </button>
+        </div>
+
+        <div class="col-xl-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas-body border-top border-black text-start ">
+    <button type="button" class="btn btn-primary  fw-semibold text-center mt-2 ms-5 " style="width: 300px; height: 50px" >Subscribe Now</button>
+    <button type="button" class="btn btn-sm fw-bold mt-3 custom-buttone"><h6 class="fw-semibold">Home Page</h6></button><br>
+    <button type="button" class="btn btn-sm fw-bold dropdown-toggle mt-2 custom-buttone" data-bs-toggle="dropdown">News</button><br>
+    <button type="button" class="btn btn-sm fw-bold dropdown-toggle mt-2 custom-buttone" data-bs-toggle="dropdown">Opinion</button><br>
+    <button type="button" class="btn btn-sm fw-bold dropdown-toggle mt-2 custom-buttone" data-bs-toggle="dropdown">Sports</button><br>
+    <button type="button" class="btn btn-sm fw-bold dropdown-toggle mt-2 custom-buttone" data-bs-toggle="dropdown">Politics</button><br>
+    <button type="button" class="btn btn-sm fw-bold dropdown-toggle mt-2 custom-buttone" data-bs-toggle="dropdown">Entertainment</button><br>
+    <button type="button" class="btn btn-sm fw-bold dropdown-toggle mt-2 custom-buttone" data-bs-toggle="dropdown">Lifestyle</button><br>
+    <button type="button" class="btn btn-sm fw-bold mt-2 custom-buttone">Photo</button><br>
+    <button type="button" class="btn btn-sm fw-bold dropdown-toggle mt-2 custom-buttone" data-bs-toggle="dropdown">Obituaries</button><br>
+    <button type="button" class="btn btn-sm fw-bold mt-2 custom-buttone">Subscribe</button><br>
+    <button type="button" class="btn btn-sm fw-bold mt-5 custom-buttone">Log In</button><br>
+
+    <div class="text-center border-top  mt-3 pt-3">
+    <p class="text-center fw-semibold">Sign up for email newsletters</p>
+    <button type="button" class="btn btn-primary  fw-semibold text-center " style="width: 200px; height: 40px" >Sign Up</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var container = document.getElementById('stickyContainer');
+    if (window.scrollY > 0) {
+      container.classList.add('sticky-bottom-border');
+    } else {
+      container.classList.remove('sticky-bottom-border');
+    }
+  });
+</script>
+
+<div class="container-fluid   sticky-top  d-none d-lg-block" >
+  <div class="row ">
+    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2 col-1 pb-3 pt-3 mb-2  bg-white">
+      <button type="button" class="btn fw-semibold text-start ms-3 " data-bs-toggle="offcanvas" data-bs-target="#demo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list mb-1 fw-bold" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+        <span class="d-none d-lg-inline">All Sections</span>
+      </button>
+    </div>
+
+    <div class="col-xl-6 col-lg-5 col-md-6 col-sm-7 col-10"></div>
+
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-1 pb-3 pt-3 mb-2 ">
+      <div class="row">
+        <div class="col-xl-2 col-md-9 col-sm-9 "></div>
+        <div class="col-xl-4 col-lg-5  col-md-8 me-2 d-none d-lg-block">
+          <button type="button" class="btn btn-primary  fw-semibold  " style="width: 100px" >Subscribe</button>
+        </div>
+
+        <div class="col-xl-4 col-lg-4  me-1 d-none d-lg-block">
+          <button type="button" class="btn btn-primary fw-semibold " style="width: 100px" >Log in</button>
+        </div>
+
+
+
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-2">
+          <button type="button" class="btn btn-sm fw-bold  text-start ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search ms-0 ps-0" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid sticky-column d-none d-lg-block" id="stickyContainer">
+  <div class="row">
+
+    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-2 col-1  ">
+      <p class="fw-semibold ms-4 mt-3 d-none d-lg-block">42°F Tuesday, April 23rd 2024</p>
+    </div>
+
+    <div class="col-xl-6  col-lg-4 col-md-6 col-sm-6 col-6 text-center ms-2 ">
+      <img src="https://placehold.co/400x80"  >
+    </div>
+
+
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"></div>
+
+  </div>
+</div>
+
+
+<script>
+  function makeColumnsSticky() {
+    const columns = document.querySelectorAll('.container .row .col');
+    const desiredColumns = [];
+    columns.forEach((column, index) => {
+      if (index >= 3 && index <= 8) {
+        desiredColumns.push(column);
+      }
+    });
+    window.addEventListener('scroll', function() {
+      desiredColumns.forEach(column => {
+        const rect = column.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom >= 0) {
+          column.classList.add('sticky-column');
+        } else {
+          column.classList.remove('sticky-column');
+        }
+      });
+    });
+  }
+
+  makeColumnsSticky();
+</script>
+
+<div class="offcanvas offcanvas-end" id="demo3">
+  <div class="offcanvas-header  ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ">
+          Preferenze di archiviazione
+        </div>
+        <div class="col-xl-4  col-lg-4 col-md-4 col-sm-4 col-4 text-end text-black ">
+          <button type="button" class="btn-close text-reset fw-semibold  text-black " data-bs-dismiss="offcanvas"> </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas-body text-start">
+    <p style="font-size: small">Quando visiti i siti Web, questi possono archiviare o recuperare dati su di te utilizzando cookie e tecnologie simili ("cookie"). I cookie possono essere necessari per le funzionalità di base del sito Web e per altri scopi. Hai la possibilità di disabilitare alcuni tipi di cookie, anche se ciò potrebbe influire sulla tua esperienza sul sito web.</p>
+    <button type="button" class="btn btn-link" style="font-size: small; font-family: SansSerif">Politica di archiviazione dei dati</button> <br>
+    <button type="button" class="btn btn-link" style="font-size: small; font-family: SansSerif">Terzi</button> <br>
+    <button type="button" class="btn btn-link" style="font-size: small; font-family: SansSerif">Tutte le divulgazioni di terze parti</button> <br>
+    <button type="button" class="btn btn-info border-black text-center mt-3" style="width: 150px; height: 40px">Accetta tutto</button>
+    <button type="button" class="btn btn-info  border-black ms-4 text-center mt-3" style="width: 150px; height: 40px">Rifiuta tutto</button>
+
+
+  </div>
+
+</div>
+
+
+<button type="button" class="btn fw-semibold text-start ms-3 position-fixed fixed-right" data-bs-toggle="offcanvas" data-bs-target="#demo3">
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cookie" viewBox="0 0 16 16">
+    <path d="M6 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m4.5.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.5 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+    <path d="M8 0a7.96 7.96 0 0 0-4.075 1.114q-.245.102-.437.28A8 8 0 1 0 8 0m3.25 14.201a1.5 1.5 0 0 0-2.13.71A7 7 0 0 1 8 15a6.97 6.97 0 0 1-3.845-1.15 1.5 1.5 0 1 0-2.005-2.005A6.97 6.97 0 0 1 1 8c0-1.953.8-3.719 2.09-4.989a1.5 1.5 0 1 0 2.469-1.574A7 7 0 0 1 8 1c1.42 0 2.742.423 3.845 1.15a1.5 1.5 0 1 0 2.005 2.005A6.97 6.97 0 0 1 15 8c0 .596-.074 1.174-.214 1.727a1.5 1.5 0 1 0-1.025 2.25 7 7 0 0 1-2.51 2.224Z"/>
+  </svg>
+</button>
+
+
+
+
+<div class="offcanvas offcanvas-end" id="demo2">
+  <div class="offcanvas-header  ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ">
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 co-sm-2 col-2">
+          <button type="button" class="btn text-reset fw-semibold text-center" data-bs-dismiss="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-dash-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5"/>
+            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg></button>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+          <button type="button" class="btn btn-sm fw-bold  text-start ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search ms-0 ps-0" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas-body border-top border-black">
+    <button type="button" class="btn btn-sm fw-bold mt-2 ">Subscribe</button><br>
+    <button type="button" class="btn btn-sm fw-bold mt-2 ">Login</button><br>
+    <div class="classe-con-striscia-bianca"></div>
+
+    <div class="text-center border-top  mt-3 pt-3">
+      <button type="button" class="btn btn-sm fw-bold text-center">Sign up for email newsletters</button><br>
+      <button type="button" class="btn btn-primary  fw-semibold text-center mt-1 " style="width: 200px; height: 40px" >Sign Up</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid d-block d-lg-none sticky-top bg-white border-bottom">
+  <div class="row">
+    <div class="col-md-2 col-sm-2 col-2 mt-3">
+      <button type="button" class="btn fw-bold text-start ms-3 " data-bs-toggle="offcanvas" data-bs-target="#demo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list mb-1" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="col-md-8 col-sm-8 col-8 text-center">
+      <img src="https://placehold.co/400x80"  class="img-fluid">
+    </div>
+    <div class="col-md-2 col-sm-2 col-2 mt-3 text-end">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-6 ps-2 ms-2">
+          <button type="button" class="btn fw-bold text-start  " data-bs-toggle="offcanvas" data-bs-target="#demo2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+              <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+            </svg>
+          </button>
+        </div>
+        <div class="col-md-5 col-sm-5 col-5 text-start mt-1 ps-0 ms-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search ms-0 ps-0" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-white border-bottom mt-3 text-center ms-4 me-2 d-none d-lg-block">
+  <div class="row">
+    <div class="col-xl-2"></div>
+    <div class="col-xl-8">
+      <div class="btn-group btn-group-sm ">
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">News</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Opinion</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Sports</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Politics</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Entertainment</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Lifestyle</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Multimedia/Video</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Photo</h6></button>
+        <button type="button" class="btn btn-sm fw-bold ms-2"><h6 class="fw-semibold">Obituaries</h6></button>
+
+      </div>
+    </div>
+    <div class="col-xl-2"></div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container bg-white d-none d-lg-block" >
+  <div class="row">
+    <div class="col-lg-1 col-md-0 mt-1">
+      <p class="text-primary">TRENDING:</p>
+    </div>
+    <div class="col-lg-11 " >
+      <div class="btn-group btn-group-sm" >
+        <button type="button" class="btn btn ms-4" style = "font-size: 16px; font-family: SansSerif">'Your Tax Dollars' Database</button>
+        <button type="button" class="btn btn ms-3" style=" font-size: 16px; font-family: SansSerif">Read Howie Carr</button>
+        <button type="button" class="btn btn ms-3" style="font-size: 16px; font-family: SansSerif">Dear Abby's Advice</button>
+        <button type="button" class="btn btn ms-3" style="font-size: 16px; font-family: SansSerif">Read Joe Battenfeld</button>
+        <button type="button" class="btn btn ms-3" style="font-size: 16px; font-family: SansSerif">Nation/World News</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="classe-con-striscia-bianca"></p>
+
+
+
+<div class="container-xl container-fluid bg-white mt-5  ">
+  <div class="row">
+
+    <div class=" col-xl-7 col-lg-6  col-md-5  col-sm-12 col-12 me-0 pe-0 " >
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-12 col-md-12 col-sm-6 col-12 ">
+          <button type="button" class="btn text-start ps-0 " style="text-line-through-color: primary" >
+            <h3 class="fw-bold">Howie Carr: Let’s toll all smug liberals</h3>
+          </button>
+          <p style="font-size: 17px; font-family: SansSerif; line-height: normal">I want taxes on all the smug liberals who come to Massachusetts to take over politics, wrecking the state and generally treating the indigenous peoples – that would be you and me – like we’re low-life, second-class citizens.</p>
+          <p class = "fw-bold mb-0 text-muted border-bottom" style="font-size: small">Related</p>
+          <ul>
+            <li><span class="text-start text-bg-primary text-white mt-2 " style="font-size: 13px">SUBSCRIBERS ONLY</span>
+              <button type="button" class="btn text-start pt-0">
+                <p class="fw-bold pt-0" style="font-size: small">Gov. Healey says ‘no’ plan to fire transportation secretary after border toll scandal</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class=" col-xl-7 col-lg-12 col-md-12 col-sm-6 col-12  mb-3 pb-1">
+          <img src="https://placehold.co/800x450" class="img-fluid pe-2 " >
+        </div>
+      </div>
+
+
+      <div class="row border-top pt-3">
+
+        <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 mb-4 border-bottom pb-4">
+          <div class="row">
+            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-4 col-3">
+              <img src="https://placehold.co/350x200" class="img-fluid">
+            </div>
+            <div class="col-xl-12 col-lg-6  col-md-12 col-sm-8 col-9">
+              <button type="button" class="btn text-start ps-0 " style="text-line-through-color: primary" >
+                <h7 class="fw-bold">'Turtleboy'lawyer accuses prosecutor of purposefully delaying case</h7>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 mb-4 border-bottom pb-2">
+          <div class="row">
+            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-4 col-3">
+              <img src="https://placehold.co/350x200" class="img-fluid">
+            </div>
+            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-8 col-9">
+              <button type="button" class="btn text-start ps-0 " style="text-line-through-color: primary" >
+                <h7 class="fw-bold">'Neighbors vow to keep fighting Boston, pro soccer team’s plans for White Stadium redevelopment</h7>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 mb-4 border-bottom pb-2">
+          <div class="row">
+            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-4 col-3">
+              <img src="https://placehold.co/350x200" class="ms-0 img-fluid">
+            </div>
+            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-8 col-9">
+              <button type="button" class="btn text-start ps-0 ms-0 " style="text-line-through-color: primary" >
+                <h7 class="fw-bold">Meet Eliot Wolf, the man forming the Patriots' future and his legacy at the NFL Draft</h7>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12 col-md-6 col-sm-6 mb-4 border-bottom pb-2">
+          <div class="row">
+            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-4 col-3">
+              <img src="https://placehold.co/350x200" class="ms-0  img-fluid">
+            </div>
+            <div class="col-xl-12 col-lg-6 col-md-12 col-sm-8 col-9">
+              <button type="button" class="btn text-start ps-0 ms-0 " style="text-line-through-color: primary" >
+                <h7 class="fw-bold">Shelter dollars ‘close to running out’ as funding bill sits on Beacon Hill, Gov. Healey says</h7>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="classe-con-striscia"></p>
+
+
+
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 border-bottom border-danger border-2 ">
+          <h4 class="text-start text-danger">PROMOTIONS & SPECIALS</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ms-0 ps-0 mt-1 pb-4">
+          <img src="https://placehold.co/120x80">
+          <img src="https://placehold.co/120x80">
+          <img src="https://placehold.co/120x80">
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12  col-12 ms-0">
+
+
+      <h5 class="text-start text-muted ps-0 border-bottom border-primary border-2 pb-1" style = "font-family: SansSerif" >LATEST HEADLINES</h5>
+      <span class="text-start text-bg-primary text-white mt-2 " style="font-size: 13px">SUBSCRIBERS ONLY</span>
+      <button type="button" class="btn text-start ps-0 border-bottom " style="text-line-through-color: primary" >
+        <h6 class="fw-bold text-start">Senate gives final approval to aid for Ukraine, Israel and Taiwan, sending long-delayed bill to Biden for his signature</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 border-bottom mt-1 mb-2" style="text-line-through-color: primary" >
+        <h6 class="fw-bold text-start">Sharks ‘adapting their movements and routines,’ great white researchers discover</h6>
+      </button>
+      <span class="text-start text-bg-primary text-white " style="font-size: 13px">SUBSCRIBERS ONLY</span>
+      <button type="button" class="btn text-start ps-0 border-bottom " style="text-line-through-color: primary" >
+        <h6 class="fw-bold text-start ">Gov. Healey says ‘no’ plan to fire transportation secretary after border toll scandal</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 border-bottom " style="text-line-through-color: primary" >
+        <h6 class="fw-bold text-start mt-2">Supreme Court to hear Biden ‘ghost gun’ regulation</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 border-bottom " style="text-line-through-color: primary" >
+        <h6 class="fw-bold text-start mt-2">Karen Read case: Prosecutors challenge bringing DA to witness stand</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 border-bottom " style="text-line-through-color: primary" >
+        <h6 class="fw-bold text-start mt-2">Biden takes slight polling lead over Trump as independents consider Kennedy</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 " style="text-line-through-color: primary" >
+        <h6 class="fw-bold text-start mt-2">Crime Briefs: 2021 Caribbean Festival murderer convicted</h6>
+      </button>
+      <p class="bg-secondary bg-opacity-25 fw-bold text-center pt-3 pb-3">Sign up for email newsletters <br>
+        <button type="button" class="btn btn-outline-primary fw-semibold mt-2">Sign Up</button>
+      </p>
+    </div>
+
+
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
+
+      <img src="https://placehold.co/1000x1200" class ="mt-4 img-fluid">
+    </div>
+  </div>
+</div>
+
+
+
+<p class="classe-con-striscia-bianca-larga"></p>
+
+<div class="container-xl container-fluid  bg-white">
+  <div class="row">
+    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+      <h4 class="text-start text-primary border-bottom border-2 border-primary" style="font-family: SansSerif">TRENDING NOW</h4>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
+
+<div class="container-xl container-fluid  bg-white">
+  <div class="row">
+    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-12">
+      <ol class="list-unstyled">
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+          <div class="blue-circle ">1</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">Gov. Healey says ‘no’ plan to fire transportation secretary after border toll scandal</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+          <div class="blue-circle ">2</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">What to know in the Supreme Court case about immunity for former President Trump</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+          <div class="blue-circle">3</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">John Krasinski’s brother in hot water over his Massachusetts nonprofit: ‘Cease and Desist all activities’</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+          <div class="blue-circle ">4</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">Public records review: Ex-DA Rachael Rollins spent lavishly on food using taxpayer-paid credit card</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+          <div class="blue-circle ">5</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">America’s child care crisis is holding back moms without college degrees</h6>
+          </button>
+        </li>
+      </ol>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+      <ol class="list-unstyled">
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+            <div class="blue-circle ">6</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">Moscow court rejects Evan Gershkovich’s appeal, keeping him in jail until at least June 30</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+            <div class="blue-circle ">7</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">Editorial: Voters deserve a few robust debates</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+            <div class="blue-circle">8</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">Howie Carr: Karen Read case new trooper curveball</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+            <div class="blue-circle ">9</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">Dear Abby: Hubby wants wife to show more skin</h6>
+          </button>
+        </li>
+        <li class="d-flex align-items-center ">
+          <div class="container-circle">
+            <div class="blue-circle ">10</div>
+          </div>
+          <button type="button" class="btn text-start ps-0 ms-2" style="text-line-through-color: primary" >
+            <h6 class="fw-bold text-start ">Trooper connected to Karen Read murder case under internal investigation</h6>
+          </button>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+<div class="classe-con-striscia-bianca"></div>
+
+
+<div class="container-xl container-fluid  bg-white ">
+  <div class="row">
+
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+      <button type="button" class="btn text-start ps-0 ms-2 pb-0 " style="text-line-through-color: primary" >
+        <h5 class="text-start ps-0 text-secondary" style="font-family: SansSerif">SPORTS ></h5>
+      </button>
+      <br>
+      <img src="https://placehold.co/800x500" class = "border-top border-2 border-primary pt-3 img-fluid">
+
+      <button type="button" class="btn text-start ps-0 mt-4" style="text-line-through-color: primary" >
+        <h5 class="fw-bold">Patriots extra points: Drake Maye hoping to develop relationship with Tom Brady</h5>
+      </button>
+      <p style="font-size: 17px; font-family: SansSerif; line-height: normal">Drake Maye is looking forward to learning from Patriots legend Tom Brady.</p>
+      <button type="button" class="btn text-start ps-0 mt-3" style="text-line-through-color: primary" >
+        <h6 class="fw-bold">Patriots not ready to name Drake Maye as starting QB after 2024 NFL Draft</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 mt-1 pt-3 border-top border-muted" style="text-line-through-color: primary" >
+        <h6 class="fw-bold">Patriots still looking to add offensive ‘weapons,’ O-line help</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 mt-1 pt-3 border-top border-muted" style="text-line-through-color: primary" >
+        <h6 class="fw-bold">Notebook: Celtics can’t afford another Kristaps Porzingis no-show in Game 3</h6>
+      </button>
+    </div>
+
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+      <button type="button" class="btn text-start ps-0 ms-2 pb-0" style="text-line-through-color: primary" >
+        <h5 class="text-start text-secondary ps-0" style="font-family: SansSerif">OPINION COLUMNISTS ></h5>
+      </button>
+      <br>
+      <img src="https://placehold.co/800x450" class = "border-top border-2 border-primary pt-3 mb-2 img-fluid">
+      <button type="button" class="btn text-start ps-0 mt-4" style="text-line-through-color: primary" >
+        <h5 class="fw-bold">O’Brien: Migrants are safer in their home countries</h5>
+      </button>
+      <p style="font-size: 17px; font-family: SansSerif; line-height: normal">The American public is being lied to in order to push a globalist, anti-borders political agenda. And the untruth that we are all being told is that illegal immigrants are justified in breaking immigration laws because their lives are in....</p>
+      <button type="button" class="btn text-start ps-0 mt-3" style="text-line-through-color: primary" >
+        <h6 class="fw-bold">Silverglate: Colleges must educate, not indoctrinate</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 mt-1 pt-3 border-top border-muted" style="text-line-through-color: primary" >
+        <h6 class="fw-bold">Editorial: DC elites should try living on an average wage</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0  pt-3 border-top border-muted" style="text-line-through-color: primary" >
+        <span class="text-start text-bg-primary text-white mt-2 " style="font-size: 13px">SUBSCRIBERS ONLY</span>
+        <h6 class="fw-bold">Notebook: Celtics can’t afford another Kristaps Porzingis no-show in Game 3</h6>
+      </button>
+    </div>
+
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+      <button type="button" class="btn text-start ps-0 ms-2 pb-0" style="text-line-through-color: primary" >
+        <h5 class="text-start text-secondary ps-0" style="font-family: SansSerif">LOCAL NEWS ></h5>
+      </button>
+      <br>
+      <img src="https://placehold.co/800x500" class = "border-top border-2 border-primary pt-3 img-fluid" >
+      <button type="button" class="btn text-start ps-0 mt-4" style="text-line-through-color: primary" >
+        <h5 class="fw-bold">North End eateries have new ally in William Gross</h5>
+      </button>
+      <p style="font-size: 17px; font-family: SansSerif; line-height: normal">On Thursday, the MBTA announced a 21 day public comment period for their proposed five year, multi-billion dollar capital investment plan.</p>
+      <button type="button" class="btn text-start ps-0 mt-3" style="text-line-through-color: primary" >
+        <h6 class="fw-bold">Silverglate: Colleges must educate, not indoctrinate</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0 mt-1 pt-3 border-top border-muted" style="text-line-through-color: primary" >
+        <h6 class="fw-bold">South Boston kennel owner cops to animal cruelty charges, gets probation</h6>
+      </button>
+      <button type="button" class="btn text-start ps-0  pt-3 border-top border-muted" style="text-line-through-color: primary" >
+        <span class="text-start text-bg-primary text-white mt-2 " style="font-size: 13px">SUBSCRIBERS ONLY</span>
+        <h6 class="fw-bold">House rejects attempt to move no-cost inmate calls money to local aid during budget debate</h6>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+  <div class="classe-con-striscia-bianca"></div>
+
+  <div class="container-xl container-fluid bg-white">
+    <div class="row">
+
+      <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 col-12 border-bottom border-primary border-2 ps-0 ms-0">
+        <button type="button" class="btn text-start ps-0 ms-2 pb-0" style="text-line-through-color: primary" >
+          <h5 class="text-start text-secondary ps-0" style="font-family: SansSerif">LOCAL NEWS ></h5>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-xl container-fluid bg-white">
+
+      <div class="row">
+
+        <div class="col-xl-9  col-lg-8 col-md-7 col-sm-12 col-12 ms-0 ps-0  me-0  ">
+          <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+
+              <img src="https://placehold.co/1000x500" class="pt-3 ps-0 ms-0 me-0 pe-2 img-fluid">
+              <button type="button" class="btn text-start ps-0 " style="text-line-through-color: primary" >
+                <h3 class="fw-bold">Messi packs house, scores twice against Revs</h3>
+                <p style="font-size: 17px; font-family: SansSerif; line-height: normal">eAnother global superstar proved their selling power Saturday night, and his presence almost single-handedly drew the biggest crowd the Revs have ever seen at Gillette for an MLS game. That would be Lionel Messi,</p>
+              </button>
+            </div>
+
+
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
+                  <div class="row border-top  ">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-3 col-2 ps-0">
+                      <img src="https://placehold.co/80x50" class=" ms-0 ps-0 ms-0 pt-3 pb-2">
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-9 col-10 pe-0">
+                      <button type="button" class="btn text-start pt-0 pb-0 ps-0  pe-0 pt-3" style="text-line-through-color: primary" >
+                        <h6 class="fw-bold">Lincoln-Sudbury edges Silver Lake in eight-inning softball thriller, 2-1</h6>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
+                  <div class="row border-top">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-3 col-2 ps-0">
+                      <img src="https://placehold.co/80x50" class=" ms-0 ps-0 ms-0 pt-3 pb-2">
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-9 col-10 pe-0">
+                      <button type="button" class="btn text-start pt-0 pb-0 ps-0 pe-0 pt-3" style="text-line-through-color: primary" >
+                        <h6 class="fw-bold">Tanner Houck pitches complete game shutout, Red Sox top Guardians 2-0</h6>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
+                  <div class="row border-top">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-3 col-2 ps-0">
+                      <img src="https://placehold.co/80x50" class=" ms-0 ps-0 ms-0 pt-3 pb-2">
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-9 col-10 pe-0">
+                      <button type="button" class="btn text-start pt-0 pb-0 ps-0 pe-0 pt-3" style="text-line-through-color: primary" >
+                        <h6 class="fw-bold">Tasty trout time</h6>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
+                  <div class="row border-top  ">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-3 col-2 ps-0">
+                      <img src="https://placehold.co/80x50" class=" ms-0 ps-0 ms-0 pt-3 pb-2">
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-9 col-10 pe-0 mt-3">
+                      <span class="text-start text-bg-primary text-white   " style="font-size: 13px">SUBSCRIBERS ONLY</span>
+                      <br>
+                      <button type="button" class="btn text-start pt-0 pb-0 ps-0 pe-0" style="text-line-through-color: primary" >
+                        <h6 class="fw-bold">Gallery: 128th Boston Marathon</h6>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
+                  <div class="row border-top">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-3 col-2 ps-0">
+                      <img src="https://placehold.co/80x50" class=" ms-0 ps-0 ms-0 pt-3 pb-2">
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-9 col-10 pe-0">
+                      <button type="button" class="btn text-start pt-0 pb-0 ps-0 pe-0 pt-3" style="text-line-through-color: primary" >
+                        <h6 class="fw-bold">Larry Lucchino laid to rest</h6>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 col-12">
+                  <div class="row border-top  mb-3">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-3 col-2 ps-0">
+                      <img src="https://placehold.co/80x50" class=" ms-0 ps-0 ms-0 pt-3 pb-2">
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-8 col-sm-9 col-10 pe-0 mt-3">
+                      <span class="text-start text-bg-primary text-white  " style="font-size: 13px">SUBSCRIBERS ONLY</span>
+                      <br>
+                      <button type="button" class="btn text-start pt-0 pb-0 ps-0 pe-0" style="text-line-through-color: primary" >
+                        <h6 class="fw-bold">Swan Boats</h6>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-12 col-12">
+          <img src="https://placehold.co/400x200" class="ps-0 ms-0 pe-0 me-0  img-fluid ">
+        </div>
+
+
+      </div>
+  </div>
+
+
+
+
+<div class="classe-con-striscia-bianca "></div>
+
+
+<div class="container-fluid bg-white border-top ">
+  <div class="row mt-4 ms-2">
+    <div class="col-xl-2">
+      <img src="https://placehold.co/300x80"  >
+    </div>
+    <div class="col-xl-10 "></div>
+  </div>
+</div>
+
+<div class="container-fluid bg-white border-bottom pb-3">
+  <div class="row">
+    <div class="col-xl-3 col-lg-6  col-md-5  col-sm-10 col-12 mt-3 ms-4  ">
+      <div class="row">
+        <div class="col-xl-12 col-lg-6 col-md-12 col-sm-8 col-12">
+          <div class="border-top border-2 border-black  pt-2">
+            <a class="fw-semibold custom-btn btn-dark ms-1 ">SIGN UP FOR NEWSLETTERS</a>
+            <br>
+            <button class="custom-btnn btn-dark mt-2 ">e-Edition</button>
+            <br>
+            <button class="custom-btnn btn-dark mt-2 mb-4">Send a News Tip</button>
+            <br>
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-6 col-md-12 col-sm-8 col-12">
+          <div class="border-top border-2 border-black pt-2 mt-1">
+            <a class="fw-semibold custom-btn btn-dark ms-1 ">CONTACT US</a>
+            <br>
+            <button class="custom-btnn btn-dark mt-2">Boston Herald Store/Back Copies</button>
+            <br>
+            <button class="custom-btnn btn-dark mt-2">Work With Us</button>
+            <br>
+            <button class="custom-btnn btn-dark mt-2">Legal Notices</button>
+            <br>
+            <button class="custom-btnn btn-dark mt-2">Privacy Policy</button>
+            <br>
+            <button class="custom-btnn btn-dark mt-2">Accessibility</button>
+            <br>
+            <button class="custom-btnn btn-dark mt-2">Sitemap</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-1 d-none d-xl-block"></div>
+
+    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7 col-12 mt-3 ">
+      <div class="border-top border-2 border-black pt-2 ms-3 ps-2">
+        <a class="fw-semibold custom-btn btn-dark ms-1 ">CLASSIFIEDS</a>
+        <br>
+        <button class="custom-btnn btn-dark mt-2 " >Contests</button>
+        <br>
+        <button class="custom-btnn btn-dark mt-2">Special Sections</button>
+        <br>
+        <button class="custom-btnn btn-dark mt-2">Fun & Games</button>
+        <br>
+        <button class="custom-btnn btn-dark mt-2 mb-3">Jobs</button>
+      </div>
+      <br>
+      <div class="border-top border-2 border-black  pt-2 ms-3 ps-2">
+        <a class="fw-semibold custom-btn btn-dark ms-1 ">BUSINESS DIRECTORY</a>
+        <br>
+        <button class="custom-btnn btn-dark mt-2">Network Advertising</button>
+        <br>
+        <button class="custom-btnn btn-dark mt-2">Adtaxi Solutions</button>
+        <br>
+      </div>
+    </div>
+
+
+    <div class="col-xl-1 d-none d-xl-block"></div>
+
+    <div class="col-xl-3 col-lg-2 col-md-5 col-sm-7 col-12 ms-3">
+      <div class="border-top border-2 border-black pt-2 mt-3 ">
+        <button type="button" class="btn btn-primary  btn fw-semibold  ps-5 pe-5 ">SUBSCRIBE NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-xl container-fluid bg-white mt-3 ">
+  <div class="row mt-3" >
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12">
+      <div class="btn custom-btns" style="font-size: small">
+        Terms of Use
+      </div>
+    </div>
+    <div class="col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12" >
+      <div class="btn custom-btns" style="font-size: small">
+        Cookie Policy
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
+      <div class="btn custom-btns" style="font-size: small">
+        California Notice at Collection
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
+      <div class="btn custom-btns" style="font-size: small">
+        Notice of Financial Incentive
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 col-12">
+      <div class="btn custom-btns" style="font-size: small">
+        Do Not Sell/Share My Personal Informatio
+      </div>
+    </div>
+    <div class="col-xl-1 col-lg-2 col-md-2 col-sm-12 col-12">
+      <div class="btn custom-btns" style="font-size: small">
+        Arbitration
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
+      <div class="btn custom-btns" style="font-size: small">
+        Powered by WordPress.com VIP
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 mt-2">
+      <div class="btn custom-btns" style="font-size: small">
+        Copyright © 2024 MediaNews Group
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
